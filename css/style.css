@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap {
+	width: 1000px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+.top_bar {
+	display: flex;
+	justify-content: flex-end;
+	background: #f6f6f6;
+	padding: 7px 5px;
+
+}
+.social_link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.social_link a {
+	display: block;
+	text-decoration: none;
+	margin: 0px 9px;
+	color: #4460a0;
+}
+.social_link a:hover {
+	color: #ccc;
+}
+.social_link li:first-child {
+	display: flex;
+}
+.social_link div {
+	width: 1px;
+	height: 15px;
+	background: #ccc;	
+}
+.social_link li + li > a {
+	color: #00aaec;
+}
+.header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+.header nav > a {
+	background: url(../images/hexlogo_header.png) no-repeat 50% 50%;
+	width: 171px;
+	height: 36px;
+	padding: 9px 20px;
+	text-indent: 150%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.menu {
+	display: flex;
+}
+.menu a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0c9;
+	padding: 20px 15px;
+	margin: 0px 10px;
+}
+.menu > li > a:hover {
+	padding: 20px 15px 17px;
+	border-bottom: 3px solid #0c9;
+}
+/* 下拉式選單 */
+.dropdown-list {
+	display: none;
+	align-self: baseline;
+	position: absolute;
+	width: 110px;
+	z-index: 3;
+}
+.dropdown-list a {
+	text-align: center;
+	background: rgba(0, 204, 153, 0.7);
+	color: #fff;
+	border-bottom: 1px solid rgb(245, 245, 245);
+	padding: 10px 0px;
+}
+.dropdown-list a:hover {
+	background: rgb(245, 245, 245);
+	color: #0c9;
+}
+/* swiper */
+.banner {
+	position: relative;
+}
+.swiper-container {
+  width: 1000px;
+  height: 418px;
+	z-index: 1;
+}
+.banner h3 {
+	color: #fff;
+	font-size: 35px;
+	line-height: 50px;
+	padding: 38px 25px;
+	width: 100%;
+	background: rgb(0, 0, 0, 0.2);
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.courses {
+	display: flex;
+	justify-content: space-around;
+}
+.courses > li {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	box-sizing: border-box;
+	width: 304px;
+	padding: 20px;
+	border-radius: 3px;
+	margin: 65px 0 60px;
+	box-shadow: #ccc 0px 2px 2px;
+}
+.courses > li img {
+	margin-bottom: 12px;
+}
+.courses > li h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.courses > li p, .courses > li {
+	line-height: 22px;
+	text-align: justify;
+}
+.course_jq h4 {
+	align-self: start;
+}
+.course_jq ul {
+	align-self: start;
+	list-style: inside disc;
+	padding-left: 8px;
+}
+.compares {
+	margin: 0 auto;
+	width: 840px;
+	margin-bottom: 63px;
+}
+.compares  caption {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.compares td {
+	padding: 10px 0 13px 23px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.compares thead td {
+	background: #f7f7f7;
+	font-weight: bold;
+}
+.better {
+	color: #0c9;
+}
+.visitor_info {
+	background: linear-gradient(#00644b, #009872);
+	text-align: center;
+	color: #fff;
+	padding-top: 38px;
+}
+.visitor_info h4 {
+	font-size: 25px;
+	line-height: 38px;
+}
+.visitor_info h4 + h4 {
+	margin-bottom: 27px;
+}
+.visitor_info form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.message {
+	box-sizing: border-box;
+	width: 460px;
+	height: 247px;
+	padding: 5px;
+	margin: 0 40px 30px 0;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+.visitor_info label {
+	text-align: left;
+	display: block;
+}
+.visitor_info input {
+	display: block;
+	width: 460px;
+	height: 30px;
+	margin-bottom: 18px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.visitor_info input:focus, .message {
+	outline: none;
+}
+.visitor_info input:last-child {
+	width: 70px;
+	float: right;
+	text-align: center;
+	background: #0c9;
+	color: #fff;
+	border: none;
+}
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.visitor_info input:last-child:hover {
+	border: 1px solid #fff;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+.footer > a {
+	margin: 28px 0px 60px 20px;
+}
+.contact_us {
+	margin: 28px 15px 50px 0;
+}
+.contact_us li {
+	margin-bottom: 10px;
+}
+.contact_us a {
+	text-decoration: none;
+	color: #e12d80;
+}
+.contact_us a:hover {
+	text-decoration: underline;
+}
+/* scroll top */
+.scrollTop {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 45px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+	background: rgba(21, 238, 184, 0.7);
+	color: #fff;
+}
+.material-icons:hover {
+	background: rgb(21, 238, 184);
+}
