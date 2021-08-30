@@ -295,6 +295,7 @@ table {
 	position: fixed;
 	bottom: 15px;
 	right: 15px;
+	display: none;
 }
 .material-icons {
   font-family: 'Material Icons';

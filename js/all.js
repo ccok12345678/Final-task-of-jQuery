@@ -18,7 +18,17 @@ $(document).ready(function () {
     },
   });
 
-  // scrill top
+  // scroll top
+  // 下拉一定的高度才會顯示scrollTop
+  function showBtnCondition() {
+    if($(this).scrollTop() > 300) {
+      $('.scrollTop').fadeIn();
+    } else {
+      $('.scrollTop').fadeOut();
+    }
+  }
+  $(window).scroll(showBtnCondition);
+
   $('.scrollTop').click(function (e) { 
     e.preventDefault();
     $('body, html').animate({
